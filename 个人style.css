@@ -1,15 +1,4 @@
-@font-face {
-    font-family: myFont;
-    src: url("fonts/Academy Engraved LET Fonts.ttf");
-  }
-  @font-face {
-    font-family: my1Font;
-    src: url("fonts/LibreBodoni-Italic-VariableFont_wght.ttf");
-  }
-  @font-face {
-    font-family: my2Font;;
-    src: url("fonts/LibreBodoni-VariableFont_wght.ttf");
-  }
+
 
 .qingshu .cai{
     display: none;
@@ -27,10 +16,9 @@
 
 .bigbox{
     
-    display: grid;
-    grid-template-rows: 15% 5% 8% 62%;
-    grid-template-columns: 16% 16% 16% 16% 16% 16%;
-    padding-left: 4%;
+    display: flex;
+    flex-direction:row;
+    
     
     /* margin: 100px; */
     /* padding-top: 25px; */
@@ -171,4 +159,6 @@ p::-webkit-scrollbar {
 img{
     width: 200px;
 }
-
+.img1 
+{width:50px;
+height:auto;}
