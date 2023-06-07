@@ -8,6 +8,130 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <link rel="icon" href="#" />
   <link rel="stylesheet" href="设计民工.css" />
+  <style>
+     @font-face {
+    font-family: myFont;
+    src: url("fonts/Academy Engraved LET Fonts.ttf");
+  }
+  @font-face {
+    font-family: my1Font;
+    src: url("fonts/LibreBodoni-Italic-VariableFont_wght.ttf");
+  }
+  @font-face {
+    font-family: my2Font;;
+    src: url("fonts/LibreBodoni-VariableFont_wght.ttf");
+  }
+
+  @font-face {
+    font-family: my3Font;
+    src: url("fonts/字酷堂黄楷体.TTF");
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+   
+        background-color: #f0f0f0;
+    }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .sub-element {
+    width: 100%;
+    border: 1px solid #000;
+    display: flex;
+  }
+  
+  .sub-element1 {
+    height: 100px;
+  }
+
+   .sub-element1 h1
+   {font-family:myFont ;
+    font-size: 40px;
+  }
+  .sub-element2 {
+    flex-grow: 1;
+  }
+  
+  .sub-sub-element {
+    width: 25%;
+    border-right: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .sub-sub-element.pp{
+    text-align: center;
+  }
+  
+  .sub-sub-element:last-child {
+    border-right: none;
+  }
+  
+  .sub-sub-element img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .sub-sub-element p {
+    margin-top: auto;
+    text-align: right;
+    position:relative;
+    right:20px;
+  }
+  .sub-sub-element h2{font-family:myFont;
+    font-size: 40px;
+    justify-content: flex-end;
+    position:relative;
+    left:350px;
+    top:450px;}
+    .sub-sub-element h2:hover
+    {color:rgb (255, 0, 247);}
+
+  .colorize-on-hover {
+      width:95%;
+     height:auto;
+     filter: grayscale(100%);
+     transition: filter 0.3s ease;
+  }
+
+  .colorize-on-hover:hover {
+    filter: grayscale(0%);
+  }
+
+</style>
 </head>
 <body>
-    
+ 
+</head>
+<body>
+<div class="flex-container">
+  <div class="sub-element sub-element1">
+    <h1>Design Folk</h2>
+  </div>
+  <div class="sub-element sub-element2">
+    <div class="sub-sub-element">
+      <p class="pp">The concept of design folk comes from the difference between a designer and a technician who designs software. For someone who does not use design software subjectively, they design something like a brick. The reason for designing this website is to make people think that in the current Internet age, we think that the design software on the computer screen is the solution, but in this website, whatever tools people use in the software, they get a brick, but they can build their own brick.</p>
+     
+    </div>
+    <div class="sub-sub-element">
+      <img src="image/设计民工/全景-彩.JPG"  class="colorize-on-hover">
+      <p>-panoramic</p>
+    </div>
+    <div class="sub-sub-element">
+      <img src="image/设计民工/电脑+拼图 彩.png" class="colorize-on-hover">
+      <p>——website</p>
+    </div>
+    <div class="sub-sub-element">
+      <img src="image/设计民工/拼图-彩.JPG" class="colorize-on-hover">
+      <p>-puzzle</p>
+      <h2><a href="index.html">Back</a></h2>
+    </div>
+  </div>
+</div>
+</body>
+</html>
