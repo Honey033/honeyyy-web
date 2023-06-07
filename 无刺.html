@@ -8,68 +8,205 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <link rel="icon" href="#" />
   <link rel="stylesheet" href="无刺.css" />
-     <style>
-  .container {
-    display: flex;
-  }
-  
-  .column {
-    flex: 1;
-    text-align: left;
-    padding: 20px;
-  }
-  
-  .column img {
-    width: 80%;
-    height: auto;
-  }
-  
-  .column p {
-    font-size: 60px; /* 更改文字大小为 16 像素 */
-  }
-  
-  .column:hover img {
-    content: url(image2.jpg); /* 鼠标悬停时更换为另一张图片 */
-  }
-  </style>
 
+    <style>
+      @font-face {
+    font-family: myFont;
+    src: url("fonts/Academy Engraved LET Fonts.ttf");
+  }
+  @font-face {
+    font-family: my1Font;
+    src: url("fonts/LibreBodoni-Italic-VariableFont_wght.ttf");
+  }
+  @font-face {
+    font-family: my2Font;;
+    src: url("fonts/LibreBodoni-VariableFont_wght.ttf");
+  }
+
+  @font-face {
+    font-family: my3Font;
+    src: url("fonts/字酷堂黄楷体.TTF");
+  }
+  body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #eee;
+    }
+
+    .flex-item {
+      width: 100%;
+    }
+
+    .flex-item:first-child {
+      height: 100px;
+      background-color: #ccc;
+    }
+
+    .flex-item:last-child {
+      flex: 1;
+      background-color: #ccc;
+      position: relative;
+    }
+
+    .sub-items {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      border: 1px solid #ccc;
+    }
+
+
+    .sub-items .item1{
+      flex-basis: 20%;
+      border: 1px solid #ccc
+    }
+ 
+    
+    .colorize-on-hover {
+      width:95%;
+     height:auto;
+     filter: grayscale(100%);
+     transition: filter 0.3s ease;
+  }
+
+  .colorize-on-hover:hover {
+    filter: grayscale(0%);
+  }
+
+
+    .sub-items .item2{
+      flex-basis: 20%;
+      border: 1px solid #ccc
+    }
+    .item2 img
+    {width:95%;
+    height:auto}
+   
+    .sub-items .item3{
+      flex-basis: 20%;
+      border: 1px solid #ccc
+
+    }
+    .item3 img
+    {width:95%;
+    height:auto
+  
+    }
+    .sub-items > div:last-child img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .video-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 192, 203, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .video-popup.open {
+      opacity: 1;
+      visibility: visible;
+      background-color: rgba(255, 192, 203, 0.4);
+    }
+
+    .video-popup video {
+      width: 90%;
+      height: 90%;
+      max-width: 90vw;
+      max-height: 90vh;
+    }
+  </style>
 </head>
 <body>
-    <h3>No Thorn</h3>
-   
-    <div class="container">
-        <div class="column">
-            <p>The project is presented in the form of an exhibition, with the starting point of thinking about how to recreate the pure self under the disguise in the fast-paced era. Eight fruits with different personalities are chosen and given character colors, showing the emotional changes of each fruit between thorny and non-thorny, and hoping that the audience will think about whether they all have the same sharp "protective shell" as the thorns on the surface of the fruit. "The eight fruits include
+  <div class="flex-container">
+    <div class="flex-item">
+      First Item
+    </div>
+    <div class="flex-item">
+      <div class="sub-items">
+        <div class="item1" >
+          <p>The project is presented in the form of an exhibition, with the starting point of 
+          thinking about how to recreate the pure self under the disguise in the fast-paced era. 
+          Eight fruits with different personalities are chosen and given character colors, showing 
+          the emotional changes of each fruit between thorny and non-thorny, and hoping that the 
+          audience will think about whether they all have the same sharp "protective shell" as the 
+          thorns on the surface of the fruit. "The eight fruits include</p>
+          <img class="colorize-on-hover" src="image/无刺/大海报-彩.png">
 
-            </p>
-          <img src="image/无刺/大海报-灰.png" alt="图片 1" onmouseover="this.src='image/无刺/大海报-彩.png'" onmouseout="this.src='image/无刺/大海报-灰.png'">
-         
         </div>
-        <div class="column">
-            
-          <img src="image/无刺/IP海报-灰00001.png" alt="图片 3" onmouseover="this.src='image/无刺/IP海报-彩00002.png'" onmouseout="this.src='image/无刺/IP海报-灰00001.png'">
-          <p>Among the eight fruits, there are the socially frightened dragon fruit, the crybaby pineapple... Perhaps the audience can find their own fruit among them. Only after they put down the thorns on their bodies will reveal their most real character. Xu Zhimo once said, "Because we are too accustomed to wearing masks in front of others, so we end up disguising ourselves in front of ourselves." Perhaps everyone has thorns inside them to ward off the crises in life. It is said that the vegetable market is the most smoldering presence in the city. Therefore, the exhibition takes the fruit stall in the vegetable market as its theme, hoping that the audience can return to music and melody in the familiar fruit stall, let go of the burden of life for relaxation and release the vibrant vitamin juice in the body.
+        <div class="item2">
+           <img src="image/无刺/IP海报-彩00001.png" class="colorize-on-hover">
+           <img src="image/无刺/IP海报-彩00002.png" class="colorize-on-hover">
+           <img src="image/无刺/IP海报-彩00003.png" class="colorize-on-hover">
+           <img src="image/无刺/IP海报-彩00004.png" class="colorize-on-hover">
+           <p>Among the eight fruits, there are the socially frightened dragon fruit, the crybaby pineapple... Perhaps the audience can find their own fruit among them. Only after they put down the thorns on their bodies will reveal their most real character. Xu Zhimo once said, "Because we are too accustomed to wearing masks in front of others, so we end up disguising ourselves in front of ourselves." Perhaps everyone has thorns inside them to ward off the crises in life. It is said that the vegetable market is the most smoldering presence in the city. Therefore, the exhibition takes the fruit stall in the vegetable market as its theme, hoping that the audience can return to music and melody in the familiar fruit stall, let go of the burden of life for relaxation and release the vibrant vitamin juice in the body.<br>
  
-            Project posters, graphic materials and promotional videos are placed in the display area. The interactive area adds audible music box and AR interactive tickets, the audience can choose different fruits to play different music, and scan the ticket QR code to take a photo with different IPs. It is hoped that the audience will be as lighthearted as strolling in the vegetable market during the exhibition, putting away the spikes and feeling the purity and beauty of the moment.
+            Project posters, graphic materials and promotional videos are placed in the display area. The interactive area adds audible music box and AR interactive tickets, the audience can choose different fruits to play different music, and scan the ticket QR code to take a photo with different IPs. It is hoped that the audience will be as lighthearted as strolling in the vegetable market during the exhibition, putting away the spikes and feeling the purity and beauty of the moment.<br>
              
-            The exhibition aims to let visitors relax their soft hearts while watching the exhibition, and to let their naked and pure selves reappear. Join us for a bit of vitamin joy with Thornless. 
-        </p>
+            The exhibition aims to let visitors relax their soft hearts while watching the exhibition, and to let their naked and pure selves reappear. Join us for a bit of vitamin joy with Thornless.</p>
         </div>
-        <div class="column">
-            <div class="slideshow-container">
-              <div class="slide active">
-                <img src="image5.jpg" alt="Slide 1">
-              </div>
-              <div class="slide">
-                <img src="image6.jpg" alt="Slide 2">
-              </div>
-              <div class="slide">
-                <img src="image7.jpg" alt="Slide 3">
-              </div>
-            </div>
-        <div class="column">
-          <img src="image/无刺/" alt="图片 7" onmouseover="this.src='image8.jpg'" onmouseout="this.src='image7.jpg'">
-          <p>文字 4</p>
+
+        <div class="item3">
+          <img src="image/无刺/UI-1.png" class="colorize-on-hover">
+          <img src="image/无刺/UI-2.png" class="colorize-on-hover">
+          <img src="image/无刺/ui-3.png" class="colorize-on-hover">
+          <img src="image/无刺/ui-4.png" class="colorize-on-hover">
+          <img src="image/无刺/ui-5.png" class="colorize-on-hover">
+        </div>
+        <div style="width: 40%;">
+          <img src="image/无刺/无刺-宣传视频-1.png" alt="Image" onclick="openVideoPopup('image/无刺/大海报-视频.mp4')">
         </div>
       </div>
-    </body>
+    </div>
+  </div>
+
+  <div class="video-popup" id="videoPopup">
+    <video controls autoplay>
+      <source src="" id="videoSource">
+    </video>
+  </div>
+
+  <script>
+    const videoPopup = document.getElementById('videoPopup');
+    const videoSource = document.getElementById('videoSource');
+
+    function openVideoPopup(videoSrc) {
+      document.body.style.backgroundColor = "rgba(255, 192, 203, 0.4)";
+
+      videoSource.src = videoSrc;
+      videoPopup.classList.add('open');
+    }
+
+    videoPopup.addEventListener('click', function (event) {
+      if (event.target === videoPopup) {
+        closeVideoPopup();
+      }
+    });
+
+    function closeVideoPopup() {
+      document.body.style.backgroundColor = "#eee";
+
+      videoSource.src = "";
+      videoPopup.classList.remove('open');
+    }
+  </script>
+</body>
+</html>

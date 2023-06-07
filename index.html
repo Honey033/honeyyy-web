@@ -62,6 +62,10 @@ text-align: left;}
 .infoh4 .font2{
    font-size: 12px;
 }
+.sub-itemh{
+flex-basis: 70%; 
+align-items: center;
+}
 
 .biaoti
   {font-family: myFont;
@@ -76,6 +80,8 @@ text-align: left;}
     }
 
     .flex-item {
+      display:flex;
+      flex-direction: row;
       border: 1px solid #ccc;
       padding: 10px;
       height:20%;
@@ -96,8 +102,11 @@ text-align: left;}
 
    }
    .email.texti{
-      flex-basis: 85%;
-   text-align: top;}
+   flex-basis: 85%;
+   text-align: top;
+   }
+
+   .texti h2{font-family: my3Font;}
 
    .ins{display:flex;
     flex-direction: row;
@@ -112,9 +121,14 @@ text-align: left;}
 
     .ins .texxtins
     {flex-basis: 85%;
-   text-align: top;}
+   text-align: top;
+   font-family:my3Font}
 
 
+   .sunday{
+      font-family:my1Font;
+      font-size: 30px;
+      }
 
     .sub-item img
     {height: 50px;
@@ -123,11 +137,18 @@ text-align: left;}
     .sub-item1
     {align-self: flex-start;
     align-self: top;}
+    
+    .sub-item2{
+      position:relative;
+      top: 0;
+    }
 
     .sub-item2 h4
     {text-align: center;
       font-family: my1Font;
-      font-size: 40px;
+      font-size: 25px;
+      position:relative;
+      bottom: 15px;
 
     }
     .sub-item2 h4:hover {
@@ -150,7 +171,15 @@ text-align: left;}
       border: 1px solid #ccc;
       padding: 10px;
       margin-right: 10px;
+     
     }
+    .sub-itemleft h4
+    {font-family: my1Font;
+      font-size: 25px;
+      position:relative;
+      bottom: 15px;
+    }
+
     
 
     .flex-item:nth-child(2) {
@@ -178,8 +207,6 @@ text-align: left;}
       height: auto;
       filter: grayscale(100%);
       transition: filter 0.3s;
-
-
     }
 
     .sub-itemd:hover img {
@@ -194,6 +221,7 @@ text-align: left;}
       word-break: break-word;
       white-space: normal;
       align-items: center;
+      font-family: my3Font;
     }
     .sub-itemd h4
     {text-align: center}
@@ -205,6 +233,29 @@ text-align: left;}
       padding: 10px;
       margin-right: 10px;
     }
+    .underline {
+  position: relative;
+}
+
+.underline::before,
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: black;
+}
+
+.underline::before {
+  top: 0;
+}
+
+.underline::after {
+  top: auto;
+  bottom: 0;
+}
   </style>
 </head>
 <body>
@@ -222,10 +273,10 @@ text-align: left;}
       </div>
          
          
-      <div class="sub-item" style="flex-basis: 60%;">
-         <h2 class="biaoti">Honey-y-y-y-y-y-y-y</h2>
+      <div class="sub-itemh" >
+         <h2 class="biaoti">Honey-y-y-y-y-y-y-y-y-y</h2>
         </div>
-      <div class="sub-itememail" style="flex-basis: 25%;">
+      <div class="sub-itememail" style="flex-basis: 15%;">
          <div class="email">
              <div class="emaili"><img src="image/SVG/icon画板 30.svg" alt="Icon 1"></div>
              <div class="texti"><h2>hanying033@gmail.com</h2></div>
@@ -241,62 +292,78 @@ text-align: left;}
           
       </div>
     </div>
-    <div class="flex-item "style="height:70px;">
-         <div class="sub-item" style="flex-basis: 15%;">
-          <h4>sunday</h4>
-          </div>
+    <div class="flex-item "style="height:50px;">
+         <div class="sub-item" 
+         style="flex-basis: 15%;">
+            <div class="sunday" id="date"></div>
+         </div>
+         <script>
+            // 获取当前日期
+            var currentDate = new Date();
+            
+            // 获取日期的字符串表示（例如：2023年5月31日）
+            var dateString = currentDate.toLocaleDateString();
+            
+            // 获取元素并将日期插入
+            var dateElement = document.getElementById("date");
+            dateElement.innerHTML = dateString;
+          </script>
          
          <div class="sub-item2" style="flex-basis: 70%;">
           <h4>Click on each project to see the project details</h4>
-          </div>
+         </div>
           
-         <div class="sub-item" style="flex-basis: 15%;">
-         <h4>Please read on!</h4>
-        </div>
+         <div class="sub-itemleft" style="flex-basis: 15%;">
+           <h4>Swipe left</h4>
+         </div>
     </div>
     <div class="flex-item" >
       <div class="sub-itemd" > 
-          <h4>Fully Automatic Station<br>
+          <h4 class="underline">Fully Automatic Station<br>
             2022/ 3-2022/ 6</h4>
-            <img src="image/全自动驿站/全自动驿站树-彩.png" alt="Icon 2"></img>
+            <a href="全自动驿站.html"><img src="image/全自动驿站/全自动驿站树-彩.png" alt="Icon 2"></img></a>
             <p>Fully automatic post station is a post station based on logistics problems in modern society. With the rapid increase in logistics demand, there are problems between the post station and consumers, such as signing for express delivery, and the protection of express parcels. The role of fully automatic post station It is to omit the distance between the post station and the consumer, and deliver the courier directly to the door of the consumer.
 
             </p>
         </div>
 
       <div class="sub-itemd">  
-           <h4>Love Letters<br>
-           2022/ 9-2022/ 12 </h4>
-           <img src="image/情书/大海报-彩.jpg" alt="Icon 2"></img>
-           <p>This project explores the service of love novels to people. This service is both spiritual and material.
-
-            When people read love texts, they have a firework show inside their brains. The touching plot and lingering emotions in romance novels will stimulate your cerebral cortex to secrete substances called dopamine, serotonin and oxytocin. When these three responses combine, it creates an intense cocktail of empathy, emotion, action, and joy, which is why you'll want to stay up all night reading a romance novel.
-          </p>
+         <div class="center-content">
+            <h4 class="underline">Love Letters<br>
+               2022/ 9-2022/ 12 </h4>
+               <a href="情书.html"><img src="image/情书/大海报-彩.jpg" alt="Icon 2"></img></a>
+               <p>This project explores the service of love novels to people. This service is both spiritual and material.
+    
+                When people read love texts, they have a firework show inside their brains. The touching plot and lingering emotions in romance novels will stimulate your cerebral cortex to secrete substances called dopamine, serotonin and oxytocin. When these three responses combine, it creates an intense cocktail of empathy, emotion, action, and joy, which is why you'll want to stay up all night reading a romance novel.
+              </p>
+         </div>
+           
+          
       </div>
        
       <div class="sub-itemd">
-      <h4>No Thron<br>
+      <h4 class="underline">No Thron<br>
          2022/ 10-2023/ 3
       </h4>
-         <img src="image/无刺/大海报-彩.png" alt="Icon 2"></img>
-         <p>This project starts from thinking about how people can reproduce their pure
+         <a href="无刺.html"><img src="image/无刺/大海报-彩.png" alt="Icon 2"></img></a>
+          <p>This project starts from thinking about how people can reproduce their pure
              selves under disguise in the fast-paced era. While showing the emotional changes 
              between each fruit with thorns and without thorns, it is hoped that the audience will 
              think about whether they also have fruit-like surfaces. The sharp "protective shell" like a
               thorn on the top allows the naked and pure self to reappear while watching the exhibition, and relaxes the imprisoned soft heart. </p>
       </div>
       <div class="sub-itemd">
-         <h4>Faded Love<br>
+         <h4 class="underline">Faded Love<br>
             2022/ 11-2023/ 2 
        </h4>
-         <img src="image/Faded Love/主图-彩.png" alt="Icon 2"></img>
+         <a href="faded love.html"><img src="image/Faded Love/主图-彩.png" alt="Icon 2"></img></a>
          <p>I think that the image of each other in the eyes of lovers is never the same, 
             and they seldom see each other's image objectively. In love, the relationship 
             between lovers will go through many stages. In each stage, the relationship between 
             lovers' interaction and feelings will be different, and the image in each other's eyes will also change accordingly. </p>
          </div>
       <div class="sub-itemd">
-         <h4>Emoji Newspaper<br>
+         <h4 class="underline">Emoji Newspaper<br>
             2023/ 3-2023/ 4 
         </h4>
         <img src="image/emoji报纸/手掌-大-04-01.png" alt="Icon 2"></img>
@@ -307,7 +374,7 @@ text-align: left;}
           </p>
      </div>
       <div class="sub-itemd"> 
-         <h4>Design Folk <br>
+         <h4 class="underline">Design Folk <br>
             2023/ 4-2023/ 5
          </h4>
          <img src="image/设计民工/1c950a7b02087bf40ad1f64b8485402c11dfa9ec6140-removebg-preview.png" alt="Icon 2"></img>
