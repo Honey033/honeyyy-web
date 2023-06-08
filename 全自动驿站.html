@@ -2,25 +2,26 @@
 <html>
 
 <head>
-  <title>Fully Automatic Station
-  </title>
+  <title>Fully Automatic Station</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="#" />
   <link rel="stylesheet" href="全自动驿站.css" />
 </head>
 
-    <style>
-       @font-face {
+<style>
+  @font-face {
     font-family: myFont;
     src: url("fonts/Academy Engraved LET Fonts.ttf");
   }
+
   @font-face {
     font-family: my1Font;
     src: url("fonts/LibreBodoni-Italic-VariableFont_wght.ttf");
   }
+
   @font-face {
-    font-family: my2Font;;
+    font-family: my2Font;
     src: url("fonts/LibreBodoni-VariableFont_wght.ttf");
   }
 
@@ -32,108 +33,168 @@
   body {
     margin: 0;
     padding: 0;
-   
-        background-color: #f0f0f0;
-    }
+    background-color: #f0f0f0;
+  }
 
   .flex-container {
     display: flex;
     flex-direction: column;
     height: 100vh;
   }
-  
+
   .sub-element {
     width: 100%;
     border: 1px solid #000;
     display: flex;
   }
-  
+.sub-element.文本
+{text-align: center;}
   .sub-element1 {
     height: 100px;
   }
 
-   .sub-element1 h1
-   {font-family:myFont ;
+  .sub-element1 h1 {
+    font-family: myFont;
     font-size: 40px;
   }
+
   .sub-element2 {
     flex-grow: 1;
   }
-  
+
   .sub-sub-element {
     width: 25%;
     border-right: 1px solid #000;
     padding: 10px;
     box-sizing: border-box;
   }
-  .sub-sub-element.pp{
+
+  .sub-sub-element.pp {
     text-align: center;
   }
-  
+
   .sub-sub-element:last-child {
     border-right: none;
   }
-  
+
   .sub-sub-element img {
     max-width: 100%;
     height: auto;
   }
-  
+
   .sub-sub-element p {
     margin-top: auto;
     text-align: right;
-    position:relative;
-    right:20px;
+    position: relative;
+    right: 20px;
   }
-  .sub-sub-element h2{font-family:myFont;
+
+  .sub-sub-element h2 {
+    font-family: myFont;
     font-size: 40px;
     justify-content: flex-end;
-    position:relative;
-    left:350px;
-    top:450px;}
-    .sub-sub-element h2:hover
-    {color:rgb (255, 0, 247);}
+    position: relative;
+    left: 350px;
+    top: 450px;
+  }
 
+  .sub-sub-element h2:hover {
+    color: rgb(255, 0, 247);
+  }
+
+  .sub-sub-element img{
+    width:120%;
+  }
   .colorize-on-hover {
-      width:95%;
-     height:auto;
-     filter: grayscale(100%);
-     transition: filter 0.3s ease;
+    width: 95%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
   }
 
   .colorize-on-hover:hover {
     filter: grayscale(0%);
   }
 
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    display: none;
+    z-index: 999;
+  }
+
+  .popup-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 90vw;
+    max-height: 90vh;
+    
+  }
+
+  .video-popup.open {
+      opacity: 1;
+      visibility: visible;
+      background-color: rgba(255, 192, 203, 0.4);
+    }
 </style>
-</head>
+
 <body>
- 
-</head>
-<body>
-<div class="flex-container">
-  <div class="sub-element sub-element1">
-    <h1>Design Folk</h2>
+  <div class="flex-container">
+    <div class="sub-element sub-element1">
+      <h1>Fully Automatic Station</h1>
+    </div>
+    <div class="sub-element sub-element2">
+      <div class="sub-sub-element">
+        <p class="pp">With the development of society, the drawbacks of logistics are gradually exposed, including but not limited to the following problems. First is the low efficiency of logistics: as logistics business needs to deal with a large number of orders, commodities and transportation routes, there are many links and transitions in the logistics process, and these links and transitions may lead to inefficient logistics. Secondly, logistics information is not transparent: as logistics business involves different logistics enterprises, warehousing and transportation, it is difficult to integrate and share information between information flow and logistics, which leads to non-transparent logistics information and makes it difficult to realize 
+          comprehensive monitoring and management of logistics process.Thirdly, the logistics cost is high: as the logistics business requires the use of a large amount of manpower, materials andequipment, as well as facing different geographical, climatic and traffic conditions, the logisticscost is very high, which is a considerable burden for both merchants and consumers.</p>
+      </div>
+      <div class="sub-sub-element">
+        <p class="文本">To solve these problems, a direct home delivery service from a post could be a good solution. This requires a delivery point that can cover the whole area within a region, so that the dense coverage is similar to the huge root system of the tree, and the root system also takes on the function of transporting nutrients for the whole tree. The branch part of the tree can be used as a distribution center and transit station for logistics, where orders and goods are centrally managed and sorted, and then delivered directly to the door through the roots, which can greatly improve logistics efficiency, reduce transit links and shorten logistics time. In addition, as the post station can realize the integration and sharing of logistics information, it can improve the transparency of logistics information, improve logistics efficiency and reduce logistics cost.</p>
+        <img src="image/全自动驿站/俯视根系-彩.png" class="colorize-on-hover">
+        <p>-panoramic</p>
+        <img src="image/全自动驿站/根系全景岛屿-彩.png" class="colorize-on-hover">
+        <p>-full veiw</p>
+        <img src="image/全自动驿站/快递-彩.png" class="colorize-on-hover">
+        <p>-Express delivery inside the pipe</p>
+        <img src="image/全自动驿站/管道-彩.png" class="colorize-on-hover">
+        <p>-Pipeline detail drawing I think</p>
+
+
+        
+      </div>
+      <div class="sub-sub-element" onclick="openPopup()">
+        <img src="image/全自动驿站/视频图片.png" class="colorize-on-hover">
+        <p>——website</p>
+      </div>
+    </div>
   </div>
-  <div class="sub-element sub-element2">
-    <div class="sub-sub-element">
-      <p class="pp">The concept of design folk comes from the difference between a designer and a technician who designs software. For someone who does not use design software subjectively, they design something like a brick. The reason for designing this website is to make people think that in the current Internet age, we think that the design software on the computer screen is the solution, but in this website, whatever tools people use in the software, they get a brick, but they can build their own brick.</p>
-     
-    </div>
-    <div class="sub-sub-element">
-      <img src="image/设计民工/全景-彩.JPG"  class="colorize-on-hover">
-      <p>-panoramic</p>
-    </div>
-    <div class="sub-sub-element">
-      <img src="image/设计民工/电脑+拼图 彩.png" class="colorize-on-hover">
-      <p>——website</p>
-    </div>
-    <div class="sub-sub-element">
-      <img src="image/设计民工/拼图-彩.JPG" class="colorize-on-hover">
-      <p>-puzzle</p>
-      <h2><a href="index.html">Back</a></h2>
-    </div>
+
+  <div class="popup" onclick="closePopup()">
+    <video class="popup-video" controls>
+      <source src="image/全自动驿站/视频.mp4" type="video/mp4">
+    </video>
   </div>
-</div>
+
+  <script>
+    function openPopup() {
+      const popup = document.querySelector('.popup');
+      const body = document.querySelector('body');
+      popup.style.display = 'flex';
+      body.style.backgroundColor = 'rgba(255, 192, 203, 0.4)';
+    }
+
+    function closePopup() {
+      const popup = document.querySelector('.popup');
+      const body = document.querySelector('body');
+      popup.style.display = 'none';
+      body.style.backgroundColor = '#f0f0f0';
+    }
+  </script>
 </body>
+
 </html>
