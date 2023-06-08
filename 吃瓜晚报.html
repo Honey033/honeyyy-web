@@ -48,25 +48,28 @@
  
  .sub-element1 {
    height: 100px;
+   background-color: rgb(72, 72, 72);
  }
+ .sub-element1:hover{background-color: rgb(255, 0, 247);}
 
   .sub-element1 h1
   {font-family:myFont ;
    font-size: 40px;
+   position: relative;
+   left:20px
  }
  .sub-element2 {
    flex-grow: 1;
+   overflow: auto;
  }
  
  .sub-sub-element {
    width: 25%;
-   border-right: 1px solid #000;
+  
    padding: 10px;
    box-sizing: border-box;
  }
- .sub-sub-element.pp{
-   text-align: center;
- }
+
  
  .sub-sub-element:last-child {
    border-right: none;
@@ -79,9 +82,12 @@
  
  .sub-sub-element p {
    margin-top: auto;
-   text-align: right;
+   text-align:justify;
    position:relative;
    right:20px;
+ }
+ .zhushi{
+  text-align: right;
  }
  .sub-sub-element h2
  {font-family:myFont;
@@ -111,12 +117,12 @@
 </head>
 <body>
 <div class="flex-container">
- <div class="sub-element sub-element1">
+ <div class="sub-element sub-element1"> 
    <h1>Spill the tea Newspaper</h2>
  </div>
  <div class="sub-element sub-element2">
    <div class="sub-sub-element">
-     <p class="pp">Based on the increasing use of emoji nowadays, emoji are invading our text. This newspaper exists in the future language system. At that time, most of our language will be replaced by emoji, and some of the text will be lost. So I wanted to see what the effect of emoji would be in a serious language environment.</p>
+     <p>Based on the increasing use of emoji nowadays, emoji are invading our text. This newspaper exists in the future language system. At that time, most of our language will be replaced by emoji, and some of the text will be lost. So I wanted to see what the effect of emoji would be in a serious language environment.</p>
     
    </div>
    <div class="sub-sub-element">
@@ -124,15 +130,15 @@
      <img src="image/emoji报纸/熊猫-大-01-01.png"  class="colorize-on-hover">
      <img src="image/emoji报纸/绿色-大-05-01.png"  class="colorize-on-hover">
      <img src="image/emoji报纸/饮料-大-03-01.png"  class="colorize-on-hover">
-     <p>-emoji image</p>
+     <p class="zhushi">-emoji image</p>
    </div>
    <div class="sub-sub-element">
      <img src="image/emoji报纸/报纸全-彩.png" class="colorize-on-hover">
-     <p>——newspaper</p>
+     <p class="zhushi">——newspaper</p>
    </div>
    <div class="sub-sub-element">
      <img src="image/emoji报纸/报纸卷-彩.png" class="colorize-on-hover">
-     <p>-newspaper photo</p>
+     <p class="zhushi"> -newspaper photo</p>
      <h2><a href="index.html">Back</a></h2>
    </div>
  </div>
