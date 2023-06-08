@@ -44,10 +44,12 @@
   body {
         background-color: #f0f0f0;
     }
+.flex-item
   .sub-item1{display: flex;
 flex-direction: column;
-border:1px solid #ccc;
+
 align-items: flex-start;
+
 }
 
 .info1
@@ -85,8 +87,11 @@ align-items: center;
   {font-family: myFont;
    text-align: center;
    font-size: 90px;
-   
 }
+.biaoti h2:hover {
+        color: rgb(255, 0, 247);
+    }
+    
     .flex-container {
       display: flex;
       flex-direction: column;
@@ -177,12 +182,16 @@ align-items: center;
     
       display: flex;
       flex-direction: row;
+      background-color: rgb(72, 72, 72);
 
+    }
+    .flex-item:nth-child(1):hover{
+     background-color:  rgb(255, 0, 247);
     }
 
     .flex-item:nth-child(1) .sub-item {
       flex-basis: 15%;
-      border: 1px solid #ccc;
+     
       padding: 10px;
       margin-right: 10px;
      
@@ -204,7 +213,7 @@ align-items: center;
 
     .flex-item:nth-child(2) .sub-item {
       flex-basis: 25%;
-      border: 1px solid #ccc;
+     
       padding: 10px;
       margin-right: 10px;
     }
@@ -243,7 +252,7 @@ align-items: center;
     .flex-item:nth-child(3) .sub-item {
       width: 300px;
       flex-shrink: 0;
-      border: 1px solid #ccc;
+    
       padding: 10px;
       margin-right: 10px;
     }
