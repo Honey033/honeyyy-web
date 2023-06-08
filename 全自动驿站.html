@@ -28,37 +28,73 @@
     font-family: my3Font;
     src: url("fonts/字酷堂黄楷体.TTF");
   }
-      body {
-        margin: 0;
-        padding: 0;
-      }
+
+  body {
+    margin: 0;
+    padding: 0;
+   
+        background-color: #f0f0f0;
+    }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
   
-      .flex-container {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        background-color: #eee;
-      }
+  .sub-element {
+    width: 100%;
+    border: 1px solid #000;
+    display: flex;
+  }
   
-      .flex-item {
-        width: 100%;
-        
-      }
-      
-     
+  .sub-element1 {
+    height: 100px;
+  }
+
+   .sub-element1 h1
+   {font-family:myFont ;
+    font-size: 40px;
+  }
+  .sub-element2 {
+    flex-grow: 1;
+  }
   
-      .flex-item:last-child {
-        flex: 1;
-        background-color: #ccc;
-        position: relative;
-      }
+  .sub-sub-element {
+    width: 25%;
+    border-right: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .sub-sub-element.pp{
+    text-align: center;
+  }
   
-      .sub-items {
-        display: flex;
-        height: 100%;
-        flex-direction: row;
-      }
-      .colorize-on-hover {
+  .sub-sub-element:last-child {
+    border-right: none;
+  }
+  
+  .sub-sub-element img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .sub-sub-element p {
+    margin-top: auto;
+    text-align: right;
+    position:relative;
+    right:20px;
+  }
+  .sub-sub-element h2{font-family:myFont;
+    font-size: 40px;
+    justify-content: flex-end;
+    position:relative;
+    left:350px;
+    top:450px;}
+    .sub-sub-element h2:hover
+    {color:rgb (255, 0, 247);}
+
+  .colorize-on-hover {
       width:95%;
      height:auto;
      filter: grayscale(100%);
@@ -68,110 +104,36 @@
   .colorize-on-hover:hover {
     filter: grayscale(0%);
   }
-     .item1{flex-basis: 25%;
-    }
-  .item1 img{width:95%;
-  height:auto}
-      .item2{flex-basis: 25%;}
-      .item3{flex-basis: 50%;}
-  
-  
-      .sub-items > div:last-child img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        cursor: pointer;
-      }
-  
-      .video-popup {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 192, 203, 0.4);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-      }
-  
-      .video-popup.open {
-        opacity: 1;
-        visibility: visible;
-        background-color: rgba(255, 192, 203, 0.4);
-      }
-  
-      .video-popup video {
-        width: 90%;
-        height: 90%;
-        max-width: 90vw;
-        max-height: 90vh;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="flex-container">
-      <div class="flex-item">
-        <h1>Fully Automatic Station</h1>
-      </div>
-      <div class="flex-item">
-        <div class="sub-items">
-          <div class="item1">
-             <p>With the development of society, the drawbacks of logistics are gradually exposed, including but not limited to the following problems. First is the low efficiency of logistics: as logistics business needs to deal with a large number of orders, commodities and transportation routes, there are many links and transitions in the logistics process, and these links and transitions may lead to inefficient logistics. Secondly, logistics information is not transparent: as logistics business involves different logistics enterprises, warehousing and transportation, it is difficult to integrate and share information between information flow and logistics, which leads to non-transparent logistics information and makes it difficult to realize 
-              comprehensive monitoring and management of logistics process.Thirdly, the logistics cost is high: as the logistics business requires the use of a large amount of manpower, materials andequipment, as well as facing different geographical, climatic and traffic conditions, the logisticscost is very high,which is a considerable burden for both merchants and consumers. </p>
-              <img src="image/全自动驿站/根系全景岛屿-彩.png" class=“colorize-on-hover“>
 
-          </div>
-          <div lass="item2">
-
-
-
-          </div>
-          <div style="width: 20%;"></div>
-          <div style="width: 40%;">
-            <img src="path/to/image.jpg" alt="Image" onclick="openVideoPopup('path/to/video.mp4')">
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <div class="video-popup" id="videoPopup">
-      <video controls autoplay>
-        <source src="" id="videoSource">
-      </video>
-    </div>
-  
-    <script>
-      const videoPopup = document.getElementById('videoPopup');
-      const videoSource = document.getElementById('videoSource');
-  
-      function openVideoPopup(videoSrc) {
-        document.body.style.backgroundColor = "rgba(255, 192, 203, 0.4)";
-  
-        videoSource.src = videoSrc;
-        videoPopup.classList.add('open');
-      }
-  
-      videoPopup.addEventListener('click', function (event) {
-        if (event.target === videoPopup) {
-          closeVideoPopup();
-        }
-      });
-  
-      function closeVideoPopup() {
-        document.body.style.backgroundColor = "#eee";
-  
-        videoSource.src = "";
-        videoPopup.classList.remove('open');
-      }
-    </script>
-  </body>
-  </html>
-
-</body>
-
+</style>
+</head>
+<body>
  
+</head>
+<body>
+<div class="flex-container">
+  <div class="sub-element sub-element1">
+    <h1>Design Folk</h2>
+  </div>
+  <div class="sub-element sub-element2">
+    <div class="sub-sub-element">
+      <p class="pp">The concept of design folk comes from the difference between a designer and a technician who designs software. For someone who does not use design software subjectively, they design something like a brick. The reason for designing this website is to make people think that in the current Internet age, we think that the design software on the computer screen is the solution, but in this website, whatever tools people use in the software, they get a brick, but they can build their own brick.</p>
+     
+    </div>
+    <div class="sub-sub-element">
+      <img src="image/设计民工/全景-彩.JPG"  class="colorize-on-hover">
+      <p>-panoramic</p>
+    </div>
+    <div class="sub-sub-element">
+      <img src="image/设计民工/电脑+拼图 彩.png" class="colorize-on-hover">
+      <p>——website</p>
+    </div>
+    <div class="sub-sub-element">
+      <img src="image/设计民工/拼图-彩.JPG" class="colorize-on-hover">
+      <p>-puzzle</p>
+      <h2><a href="index.html">Back</a></h2>
+    </div>
+  </div>
+</div>
+</body>
+</html>

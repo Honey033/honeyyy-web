@@ -8,49 +8,78 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <link rel="icon" href="#" />
   <link rel="stylesheet" href="情书.css" />
-</head>
-<body>
-  <h1>Love Letters</h1> 
-  <!-- 字体:Academy Engraved LET Plain:1.0 -->
-    
-    <P>Outside of textbooks, I have read probably the most romance novels. I also understand that the subject matter is clichéd, and this category has been frowned upon by critics both at home and abroad, and some people don't even count romance literature as a literary category. But one can't help but fall into the cliché that romance/erotic ($1.44 billion), crime/suspense ($728.2 million), religious/inspirational ($720 million), science fiction/fantasy ($590.2 million), and horror ($79.6 million) are at the top of the list in terms of average annual book sales of all types. According to statistics, it accounted for 58.2% of the market in 1999. 84% of romance readers are women, so it can be said that he is a book written by women for women, in which the author builds an ideal love with ambiguous words that make many readers light up and read at night. You know that when you are reading love texts, your brain is putting on a fireworks show inside. The moving plot and lingering emotions in romance novels stimulate your cerebral cortex to secrete substances called dopamine, serotonin and oxytocin. When these three reactions combine, they create an intense cocktail of empathy, emotion, action and pleasure, which is why you'll want to stay up all night reading a romance novel.
-    </P>
-    <!--字体: Kai Regular-->
-       
-       <img src="image/情书/大海报-灰.png"/>
-        <!--悬浮变成下面这个图片,点击放大,注释-Main Poster-->
-       <img src="image/情书/大海报-彩.jpg"/>
-
-
-       
-
-      <p>Chocolate will temporarily raise your dopamine levels to 1.5 times the baseline level, and the effect will disappear after a few minutes or even seconds; inhaled nicotine, such as cigarettes, will raise dopamine levels to more than 2.5 times</p>
+  
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
       
-      <img src="image/情书/小海报-灰00001.png"/>
-      <img src="image/情书/小海报-彩00001.jpg"/>
-
-      <img src="image/情书/小海报-灰00002.png"/>
-      <img src="image/情书/小海报-彩00002.jpg"/>
-
-      <img src="image/情书/小海报-灰00003.png"/>
-      <img src="image/情书/小海报-彩00003.jpg"/>
-      <!--上面三个做轮播图-->
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
       
-      <p>the baseline level, and this effect is very unhealthy; cocaine will raise dopamine levels in the blood to 2.5 times the baseline level, and amphetamines (stimulants) will raise dopamine levels in the blood to more than 10 times the baseline level. stimulants will raise dopamine levels in the blood to more than ten times the baseline level; love, whether it's a real relationship or a brief moment of pleasure in romance literature, will raise dopamine levels to more than 1.5 times the baseline level. Reading a romance novel is like having a chemical reaction inside your skull.</p>
-
-      <!--字体: Kai Regular-->
-      <img src="image/情书/流程-灰.png"/>
-      <!--点击变成--img/情书/流程-灰-->
-      <img src="image/情书/流程-彩.jpg"/>
-      <p>Romance novels serve the human process, from the reader's desire to read a book to the completion of the book, the lasting memory and impact of the book on the person. Each process extends to the role played by other actors such as publishers, authors, etc. in the process.</p>
-      <!--字体: Kai Regular-->
-     
+      .sub-element {
+        width: 100%;
+        border: 1px solid #000;
+        display: flex;
+      }
       
-   
-
-
-
-
-      <h2>back</h2>
-      <!--连接到index.html, 字体: Academy Engraved LET Plain:1.0-->
-</body>
+      .sub-element1 {
+        height: 100px;
+      }
+      
+      .sub-element2 {
+        flex-grow: 1;
+      }
+      
+      .sub-sub-element {
+        width: 25%;
+        border-right: 1px solid #000;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      
+      .sub-sub-element:last-child {
+        border-right: none;
+      }
+      
+      .sub-sub-element img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .sub-sub-element p {
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="sub-element sub-element1">
+        <h1>Love Letters</h1>
+      </div>
+      <div class="sub-element sub-element2">
+        <div class="sub-sub-element">
+          <img src="image1.jpg" alt="Image 1">
+          <p>文字 1</p>
+        </div>
+        <div class="sub-sub-element">
+          <img src="image2.jpg" alt="Image 2">
+          <p>文字 2</p>
+        </div>
+        <div class="sub-sub-element">
+          <img src="image3.jpg" alt="Image 3">
+          <p>文字 3</p>
+        </div>
+        <div class="sub-sub-element">
+          <img src="image4.jpg" alt="Image 4">
+          <p>文字 4</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
+  
