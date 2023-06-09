@@ -48,7 +48,7 @@
     }
 
     .wenzi {
-      font-size: 8;
+      font-size: 6;
       position: relative;
       left: 300px;
     }
@@ -61,7 +61,7 @@
 
     .sub-element {
       width: 100%;
-      border: 1px solid #000;
+     
       display: flex;
     }
 
@@ -122,6 +122,8 @@
     .sub-element1 h1 {
       font-family: myFont;
       font-size: 50PX;
+      position:relative;
+      left:10px;
     }
 
     .sub-element2 {
@@ -155,9 +157,19 @@
       justify-content: flex-end;
       position: relative;
       left: 1650px;
-      top: 930px;
+      top: 900px;
       position: fixed;
       z-index: 9999;
+    }
+    .sub-sub-element h3{
+      font-family:my2Font; 
+      text-align: left;
+      position:relative;
+     
+    }
+    
+    .sub-sub-element h3:hover{
+      color:rgb(255, 0, 247);
     }
   </style>
 </head>
@@ -169,6 +181,7 @@
     </div>
     <div class="sub-element sub-element2">
       <div class="sub-sub-element">
+        <h3>Motive</h3>
 
         <p>I think that the image of each other in the eyes of lovers is never the same, and they seldom see each
           other's image objectively. In love, the relationship between lovers will go through many stages. In each
@@ -191,7 +204,7 @@
             <li class="item"><img src="image/Faded Love/模型-彩00003.png" class="colorize-on-hover"></li>
             <li class="item"><img src="image/Faded Love/模型-彩00004.png" class="colorize-on-hover"></li> -->
           </ul>
-          <button id="prev"><</button>
+          <button id="prev"></button>
             <button id="next">></button>
         </div>
             <p class="wenzi">-model</p>

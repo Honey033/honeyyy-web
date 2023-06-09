@@ -56,6 +56,8 @@
    .sub-element1 h1
    {font-family:myFont ;
     font-size: 40px;
+    position:relative;
+    left:15px;
   }
   .sub-element2 {
     flex-grow: 1;
@@ -69,6 +71,9 @@
   }
   .sub-sub-element p{
     text-align:justify;
+    position: relative;
+    left:10px;
+    width:95%
   }
   
   .sub-sub-element:last-child {
@@ -93,7 +98,7 @@
     justify-content: flex-end;
     position:relative;
     left:1650px;
-    top:800px;
+    top:900px;
     position: fixed;
     z-index: 9999;}
 
@@ -107,6 +112,17 @@
   .colorize-on-hover:hover {
     filter: grayscale(0%);
   }
+  .sub-sub-element h3{
+      font-family:my2Font; 
+      text-align: left;
+      position:relative;
+      left:10px;
+    }
+    
+    .sub-sub-element h3:hover{
+      color:rgb(255, 0, 247);
+    }
+
 
 </style>
 </head>
@@ -120,6 +136,7 @@
   </div>
   <div class="sub-element sub-element2">
     <div class="sub-sub-element">
+      <h3>Motive</h3>
       <p class="pp">The concept of design folk comes from the difference between a designer and a technician who designs software. For someone who does not use design software subjectively, they design something like a brick. The reason for designing this website is to make people think that in the current Internet age, we think that the design software on the computer screen is the solution, but in this website, whatever tools people use in the software, they get a brick, but they can build their own brick.</p>
      
     </div>

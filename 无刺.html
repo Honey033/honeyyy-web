@@ -52,14 +52,15 @@
       .flex-item h1 {
         font-family: myFont;
         font-size: 40px;
+        position:relative;
+        left:10px
+
       }
 
       .flex-item:first-child {
         height: 100px;
         background-color:  rgb(72, 72, 72);
-        position: fixed;
-       top: 0;
-       z-index: 99;
+     
         
       }
       .flex-item:first-child:hover{
@@ -68,7 +69,7 @@
 
       .flex-item:last-child {
         flex: 1;
-        margin-top: 100px;
+      
         
         
       }
@@ -86,7 +87,11 @@
       }
        .item1 p{
         font-family:my3Font ;
+        width:93%;
         text-align: justify;
+        position:relative;
+        left:12px
+        
        }
        .item2 p{
         font-family:my3Font ;
@@ -144,7 +149,7 @@
     justify-content: flex-end;
     position:relative;
     left:1650px;
-    top:830px;
+    top:900px;
     position: fixed;
     z-index: 9999;}
 
@@ -216,6 +221,24 @@
       .swiper-slide {
         background: #cccccc !important;
       }
+      .item3 h3{ font-family:my2Font; 
+      text-align: left;
+      position:relative;
+      left:10px;
+      }
+      .item3 h3:hover{
+        color:rgb(255, 0, 247);
+      }
+      .mo{
+        font-family:my2Font; 
+      text-align: left;
+      position:relative;
+      left:10px;
+      }
+      .mo:hover{
+        color:rgb(255, 0, 247);
+      }
+
     </style>
   </head>
   <body>
@@ -226,6 +249,7 @@
       <div class="flex-item">
         <div class="sub-items">
           <div class="item1">
+            <h3 class="mo">Motive</h3>
             <p>
               The project is presented in the form of an exhibition, with the starting point of thinking about how to recreate the pure self under the disguise
               in the fast-paced era. Eight fruits with different personalities are chosen and given character colors, showing the emotional changes of each
@@ -281,6 +305,7 @@
             <img src="image/无刺/ui-3.png" class="colorize-on-hover" />
             <img src="image/无刺/ui-4.png" class="colorize-on-hover" />
             <img src="image/无刺/ui-5.png" class="colorize-on-hover" /> -->
+            <h3>UI interface</h3>
             <p>This app is produced for the collection of NFT in the No Thorn. In the No Thorn, we created a virtual space. There are currently 8 NFT images with different personalities, and they change between thorns and thorns looking at our expression. We hope to create an brand that allows consumers to buy these NFT images with the No Thorn coins obtained at the No Thorn electric festival.
 The app has three main functions, one is to display all NFTs, and the other is to click to see the story of each NFT. Consumers can find their microcosm in these NFT stories. Third, consumers will have to Unlock the NFT purchased by the dog in their own window. The way to unlock it is to pull out the thorn.</p>
           </div>
