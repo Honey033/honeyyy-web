@@ -41,9 +41,13 @@
         background-color: #eee;
       }
 
-      .flex-item {
+      .flex-item{
         width: 100%;
-      }
+       
+  }
+
+
+      
       .flex-item h1 {
         font-family: myFont;
         font-size: 40px;
@@ -51,12 +55,15 @@
 
       .flex-item:first-child {
         height: 100px;
-        background-color: #ccc;
+        background-color:  rgb(72, 72, 72);
       }
+      .flex-item:first-child:hover{
+    background-color: rgb(255, 0, 247) ;
+  };
 
       .flex-item:last-child {
         flex: 1;
-        background-color: #ccc;
+       
         position: relative;
       }
 
@@ -71,7 +78,12 @@
         flex-basis: 20%;
         border: 1px solid #ccc;
       }
-
+       .item1 p{
+        font-family:my3Font ;
+       }
+       .item2 p{
+        font-family:my3Font ;
+       }
       .colorize-on-hover {
         width: 95%;
         height: auto;
@@ -81,6 +93,9 @@
 
       .colorize-on-hover:hover {
         filter: grayscale(0%);
+      }
+      .item3 p{
+        font-family: my3Font;
       }
 
       .sub-items .item2 {
@@ -144,7 +159,7 @@
       .video-popup.open {
         opacity: 1;
         visibility: visible;
-        background-color: rgba(255, 192, 203, 0.4);
+        background-color:rgb(255, 0, 247 0.4);
       }
 
       .video-popup video {
@@ -215,8 +230,7 @@
             <div class="IP">
               <img src="image/无刺/IP海报-彩00001.png" class="colorize-on-hover" />
               <img src="image/无刺/IP海报-彩00002.png" class="colorize-on-hover" />
-             <img src="image/无刺/IP海报-彩00003.png" class="colorize-on-hover" />
-             <img src="image/无刺/IP海报-彩00004.png" class="colorize-on-hover" />
+             
             </div>
             <script>
               const container = document.querySelector('.ip');
@@ -277,7 +291,7 @@
 The app has three main functions, one is to display all NFTs, and the other is to click to see the story of each NFT. Consumers can find their microcosm in these NFT stories. Third, consumers will have to Unlock the NFT purchased by the dog in their own window. The way to unlock it is to pull out the thorn.</p>
           </div>
           <div style="width: 40%">
-            <img src="image/无刺/无刺-宣传视频-1.png" alt="Image" onclick="openVideoPopup('image/无刺/大海报-视频.mp4')" />
+            <img src="image/无刺/无刺-宣传视频-1.png" alt="Image" onclick="openVideoPopup('image/无刺/大海报-视频 - Compressed with FlexClip.mp4')" />
             <h2><a href="index.html">Back</a></h2>
           </div>
         </div>
