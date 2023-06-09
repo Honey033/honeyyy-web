@@ -100,8 +100,8 @@ h6{
 }
 p{
     text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0.2667rem;
+    padding-right: 0.2667rem;
     width: 250px;
     height: 190px;
     overflow: auto;
@@ -162,3 +162,4 @@ img{
 .img1 
 {width:50px;
 height:auto;}
+
