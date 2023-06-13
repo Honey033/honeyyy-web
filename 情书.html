@@ -31,7 +31,7 @@
         margin: 0;
         padding: 0;
         background-color: #f0f0f0;
-        cursor: url('image/SVG/口红-07.png'), auto;
+        cursor: url('image/SVG/口红11_画板\ 1.png'), auto;
       }
       .colorize-on-hover {
       width:95%;
@@ -43,9 +43,14 @@
   .colorize-on-hover:hover {
     filter: grayscale(0%);
   }
-      .zong{
-        display: flex;
-        flex-direction: row;
+  .center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.zong{ display: flex;
+   flex-direction: row;
         overflow: auto;
       }
 .wenzi{font-size: 8;
@@ -53,7 +58,7 @@
        left: 310px;
       text-align: right;}
 
-      .flex-container {
+ .flex-container {
         display: flex;
         flex-direction: column;
         height: 100vh;
@@ -62,19 +67,22 @@
       }
       
       
-      .sub-element {
+.sub-element {
         width: 100%;
         border: 1px solid #000;
         display: flex;
+        justify-content: center; /* 在主轴上居中 */
+      align-items: center;
       }
-      .sub-sub-element p
+
+ .sub-sub-element p
       {font-family: my3Font;
       line-height: 1.3;
       margin-top: auto;
         text-align: justify;
     }
 
-      .sub-element1 {
+ .sub-element1 {
         height: 100px;
         background-color: rgb(72, 72, 72);
       }
@@ -155,26 +163,29 @@
           <p> Outside of textbooks, I have read probably the most romance novels. I also understand that the subject matter is clichéd, and this category has been frowned upon by critics both at home and abroad, and some people don't even count romance literature as a literary category. You know that when you are reading love texts, your brain is putting on a fireworks show inside. The moving plot and lingering emotions in romance novels stimulate your cerebral cortex to secrete substances called dopamine, serotonin and oxytocin. When these three reactions combine, they create an intense cocktail of empathy, emotion, action and pleasure, which is why you'll want to stay up all night reading a romance novel.
 
             There are many elements in love literature that represent romance, and these elements inspired me, and I used them in the design elements. These elements themselves have their own meaning, and in the book of love literature they are given a new meaning. their own meaning, and in the book of love literature they are given a new They have their own meaning, but in the book of love literature they are given a new meaning.</p>
-            <img src="image/情书/小海报-彩00004.jpg" class="colorize-on-hover"> <p class="wenzi">-small poster</p>
+            <img src="image/情书/大海报.jpg" class="colorize-on-hover">
+            <p class="wenzi">-main poster</p>
           </div>
         <div class="sub-sub-element">
-          <img src="image/情书/大海报-彩.jpg" class="colorize-on-hover">
-          <p class="wenzi">-main poster</p>
+        
+        
           <h3>Romance Object</h3> 
           <p >Chocolate will temporarily raise your dopamine levels to 1.5 times the baseline level, and the effect will disappear after a few minutes or even seconds; inhaled nicotine, such as cigarettes, will raise dopamine levels to more than 2.5 times the baseline level, and this effect is very unhealthy; cocaine will raise dopamine levels in the blood to 2.5 times the baseline level, and amphetamines (stimulants) will raise dopamine levels in the blood to more than 10 times the baseline level. stimulants) will raise dopamine levels in the blood to more than ten times the baseline level; love, whether it's a real relationship or a brief moment of pleasure in romance literature, will raise dopamine levels to more than 1.5 times the baseline level. Reading a romance novel is like having a chemical reaction inside your skull.</p>
+          <img src="image/情书/小海报.jpg" class="colorize-on-hover">
+          <p class="wenzi">-small poster</p>
         </div>
-        <div class="sub-sub-element">
-          <img src="image/情书/小海报-彩00001.jpg" class="colorize-on-hover">
-          <img src="image/情书/小海报-彩00002.jpg" class="colorize-on-hover">
+        <div class="sub-sub-element center-image">
           
+          <img src="image/情书/小物件.jpg" class="colorize-on-hover">
           
           <p class="wenzi">-small poster</p>
         </div>
         <div class="sub-sub-element">
-          <img src="image/情书/流程-彩.jpg" class="colorize-on-hover">
-          <p class="wenzi">-flow chart</p>
           <h3>The process of love novels serving peoplet</h3> 
           <p >Romance novels serve the human process, from the reader's desire to read a book to the completion of the book, the lasting memory and impact of the book on the person. Each process extends to the role played by other actors such as publishers, authors, etc. in the proces</p>
+          <img src="image/情书/流程图.jpg" class="colorize-on-hover">
+          <p class="wenzi">-flow chart</p>
+          
           <a class="shuye" href="./index.html" id="shuye">
             <img src="./image/SVG/书页-13.png" alt="">
           </a>
