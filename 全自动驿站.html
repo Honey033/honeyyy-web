@@ -35,12 +35,15 @@
     padding: 0;
     background-color: #f0f0f0;
     cursor: url('image/SVG/眼镜_画板\ 1.png'), auto;
+    overflow-x: hidden;
+      overflow-y:hidden;
   }
 
   .flex-container {
     display: flex;
     flex-direction: column;
     height: 100vh;
+   
   }
 
   .sub-element {
@@ -69,6 +72,7 @@
   .sub-element2 {
     flex-grow: 1;
     overflow: auto;
+    
   }
 
   .sub-sub-element {
@@ -83,6 +87,7 @@
   }
 
   .sub-sub-element:last-child {
+    width: 50%;
     border-right: none;
   }
 
@@ -98,9 +103,10 @@
     left: 10px;
     width:95%;
     font-family:my3Font ;
-
-
-
+  }
+  .sub-sub-element .beizhu{
+    width: 95%;
+    text-align: right;
   }
 
   .sub-sub-element h2 {
@@ -177,7 +183,7 @@
     {color: rgb(255, 0, 247);}
 
     .sub-sub-element .colorize-on-hover1{
-      width:500px;
+      /* width:500px; */
     }
 
     .sub-sub-element h3{
@@ -190,7 +196,19 @@
     .sub-sub-element h3:hover{
       color:rgb(255, 0, 247);
     }
+    /* 书页 */
+    .shuye {
+        width: 13%;
+        height: 25%;
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+      }
 
+      .shuye img {
+        width: 100%;
+        height: 100%;
+      }
 
 </style>
 
@@ -205,9 +223,9 @@
         <p >With the development of society, the drawbacks of logistics are gradually exposed, including but not limited to the following problems. First is the low efficiency of logistics: as logistics business needs to deal with a large number of orders, commodities and transportation routes, there are many links and transitions in the logistics process, and these links and transitions may lead to inefficient logistics. Secondly, logistics information is not transparent: as logistics business involves different logistics enterprises, warehousing and transportation, it is difficult to integrate and share information between information flow and logistics, which leads to non-transparent logistics information and makes it difficult to realize 
           comprehensive monitoring and management of logistics process.Thirdly, the logistics cost is high: as the logistics business requires the use of a large amount of manpower, materials andequipment, as well as facing different geographical, climatic and traffic conditions, the logisticscost is very high, which is a considerable burden for both merchants and consumers.</p>
         <img src="image/全自动驿站/俯视根系-彩.png" class="colorize-on-hover">
-        <p class=“beizhu”>-panoramic</p>
+        <p class="beizhu">-panoramic</p>
         <img src="image/全自动驿站/管道-彩.png" class="colorize-on-hover">
-        <p class=“beizhu”>-Pipeline detail drawing I think</p>
+        <p class="beizhu">-Pipeline detail drawing I think</p>
       </div>
       <div class="sub-sub-element">
         <h3>Detail</h3>
@@ -215,9 +233,9 @@
         
         
         <img src="image/全自动驿站/根系全景岛屿-彩.png" class="colorize-on-hover">
-        <p class=“beizhu”>-full veiw</p>
+        <p class="beizhu">-full veiw</p>
         <img src="image/全自动驿站/快递-彩.png" class="colorize-on-hover">
-        <p class=“beizhu”>-Express delivery inside the pipe</p>
+        <p class="beizhu">-Express delivery inside the pipe</p>
         
 
 
@@ -225,10 +243,13 @@
       </div>
       <div class="sub-sub-element" onclick="openPopup()">
         <img src="image/全自动驿站/视频图片.png" class="colorize-on-hover1">
-        <p>—motion</p>
-        <h2><a href="index.html">Back</a></h2>
+        <p class="beizhu">—motion</p>
+        <!-- <h2><a href="index.html">Back</a></h2> -->
       </div>
     </div>
+    <a class="shuye" href="./index.html">
+      <img src="./image/SVG/书页-13.png" alt="">
+    </a>
   </div>
 
   <div class="popup" onclick="closePopup()">

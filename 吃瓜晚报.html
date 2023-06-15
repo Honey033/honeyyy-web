@@ -10,154 +10,203 @@
   <link rel="stylesheet" href="吃瓜晚报.css" />
   <style>
     @font-face {
-   font-family: myFont;
-   src: url("fonts/Academy Engraved LET Fonts.ttf");
- }
- @font-face {
-   font-family: my1Font;
-   src: url("fonts/LibreBodoni-Italic-VariableFont_wght.ttf");
- }
- @font-face {
-   font-family: my2Font;;
-   src: url("fonts/LibreBodoni-VariableFont_wght.ttf");
- }
+      font-family: myFont;
+      src: url("fonts/Academy Engraved LET Fonts.ttf");
+    }
 
- @font-face {
-   font-family: my3Font;
-   src: url("fonts/字酷堂黄楷体.TTF");
- }
+    @font-face {
+      font-family: my1Font;
+      src: url("fonts/LibreBodoni-Italic-VariableFont_wght.ttf");
+    }
 
- body {
-   margin: 0;
-   padding: 0;
-  
-       background-color: #f0f0f0;
-       cursor: url('image/SVG/眼镜_画板\ 1.png'), auto;
-   }
+    @font-face {
+      font-family: my2Font;
+      ;
+      src: url("fonts/LibreBodoni-VariableFont_wght.ttf");
+    }
 
- .flex-container {
-   display: flex;
-   flex-direction: column;
-   height: 100vh;
- }
- 
- .sub-element {
-   width: 100%;
-   
-   display: flex;
- }
- 
- .sub-element1 {
-   height: 100px;
-   background-color: rgb(72, 72, 72);
- }
- .sub-element1:hover{background-color: rgb(255, 0, 247);}
+    @font-face {
+      font-family: my3Font;
+      src: url("fonts/字酷堂黄楷体.TTF");
+    }
 
-  .sub-element1 h1
-  {font-family:myFont ;
-   font-size: 40px;
-   position: relative;
-   left:20px
- }
- .sub-element2 {
-   flex-grow: 1;
-   overflow: auto;
- }
- 
- .sub-sub-element {
-   width: 25%;
-  
-   padding: 10px;
-   box-sizing: border-box;
- }
+    body {
+      margin: 0;
+      padding: 0;
 
- 
- .sub-sub-element:last-child {
-   border-right: none;
- }
- 
- .sub-sub-element img {
-   max-width: 100%;
-   height: auto;
- }
- 
- .sub-sub-element p {
-   margin-top: auto;
-   text-align:justify;
-   position:relative;
-   
-   font-family: my3Font;
- }
- .zhushi{
-  text-align: right;
-  position:relative
-  left：300px;
- }
- .sub-sub-element h2
- {font-family:myFont;
-   font-size: 40px;
-   justify-content: flex-end;
-   position:relative;
-   left:1650px;
-   top:900px;
-   position: fixed;
-   z-index: 9999;}
+      background-color: #f0f0f0;
+      cursor: url('image/SVG/眼镜_画板\ 1.png'), auto;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
 
- .colorize-on-hover {
-     width:95%;
-    height:auto;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
- }
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      position: relative;
+    }
 
- .colorize-on-hover:hover {
-   filter: grayscale(0%);
- }
- .sub-sub-element h3{
-      font-family:my2Font; 
+    .sub-element {
+      width: 100%;
+
+      display: flex;
+    }
+
+    .sub-element1 {
+      height: 100px;
+      background-color: rgb(72, 72, 72);
+    }
+
+    .sub-element1:hover {
+      background-color: rgb(255, 0, 247);
+    }
+
+    .sub-element1 h1 {
+      font-family: myFont;
+      font-size: 40px;
+      position: relative;
+      left: 20px
+    }
+
+    .sub-element2 {
+      flex-grow: 1;
+      overflow: auto;
+    }
+
+    .sub-sub-element {
+      width: 25%;
+
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+
+    .sub-sub-element:last-child {
+      border-right: none;
+    }
+
+    .sub-sub-element img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .sub-sub-element p {
+      margin-top: auto;
+      text-align: justify;
+      position: relative;
+
+      font-family: my3Font;
+    }
+
+    .sub-sub-element .zhushi {
+      width: 95%;
+      text-align: right;
+      /* position: relative left：300px; */
+    }
+
+    .sub-sub-element h2 {
+      font-family: myFont;
+      font-size: 40px;
+      justify-content: flex-end;
+      position: relative;
+      left: 1650px;
+      top: 900px;
+      position: fixed;
+      z-index: 9999;
+    }
+
+    .colorize-on-hover {
+      width: 95%;
+      height: auto;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+
+    .colorize-on-hover:hover {
+      filter: grayscale(0%);
+    }
+
+    .sub-sub-element h3 {
+      font-family: my2Font;
       text-align: left;
-  
-    }
-    
-    .sub-sub-element h3:hover{
-      color:rgb(255, 0, 247);
+
     }
 
-</style>
+    .sub-sub-element h3:hover {
+      color: rgb(255, 0, 247);
+    }
+
+    /* 书页 */
+    .shuye {
+      width: 13%;
+      height: 25%;
+      position: fixed;
+      bottom: 0;
+      right: 20px;
+      /* display: none;
+      transition:  all 1s; */
+    }
+
+    .shuye img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
+
 <body>
 
-</head>
-<body>
-<div class="flex-container">
- <div class="sub-element sub-element1"> 
-   <h1>Spill the tea Newspaper</h2>
- </div>
- <div class="sub-element sub-element2">
-   <div class="sub-sub-element">
-    <h3>Motive</h3>
-     <p>Based on the increasing use of emoji nowadays, emoji are invading our text. This newspaper exists in the future language system. At that time, most of our language will be replaced by emoji, and some of the text will be lost. So I wanted to see what the effect of emoji would be in a serious language environment.</p>
-    
-   </div>
-   <div class="sub-sub-element">
-     <img src="image/emoji报纸/手掌-大-04-01.png"  class="colorize-on-hover">
-     <img src="image/emoji报纸/熊猫-大-01-01.png"  class="colorize-on-hover">
-     <img src="image/emoji报纸/绿色-大-05-01.png"  class="colorize-on-hover">
-     <img src="image/emoji报纸/饮料-大-03-01.png"  class="colorize-on-hover">
-     <p class="zhushi">-emoji image</p>
-   </div>
-   <div class="sub-sub-element">
-     <img src="image/emoji报纸/报纸全-彩.png" class="colorize-on-hover">
-     <p class="zhushi">—newspaper</p>
-   </div>
-   <div class="sub-sub-element">
-     <img src="image/emoji报纸/报纸卷-彩.png" class="colorize-on-hover">
-     <p class="zhushi"> -newspaper photo</p>
-     <h2><a href="index.html">Back</a></h2>
-   </div>
- </div>
-</div>
-</body>
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="sub-element sub-element1">
+        <h1>Spill the tea Newspaper</h2>
+      </div>
+      <div class="sub-element sub-element2" id="zong">
+        <div class="sub-sub-element">
+          <h3>Motive</h3>
+          <p>Based on the increasing use of emoji nowadays, emoji are invading our text. This newspaper exists in the
+            future language system. At that time, most of our language will be replaced by emoji, and some of the text
+            will be lost. So I wanted to see what the effect of emoji would be in a serious language environment.</p>
+
+        </div>
+        <div class="sub-sub-element">
+          <img src="image/emoji报纸/手掌-大-04-01.png" class="colorize-on-hover">
+          <img src="image/emoji报纸/熊猫-大-01-01.png" class="colorize-on-hover">
+          <img src="image/emoji报纸/绿色-大-05-01.png" class="colorize-on-hover">
+          <img src="image/emoji报纸/饮料-大-03-01.png" class="colorize-on-hover">
+          <p class="zhushi">-emoji image</p>
+        </div>
+        <div class="sub-sub-element">
+          <img src="image/emoji报纸/报纸全-彩.png" class="colorize-on-hover">
+          <p class="zhushi">—newspaper</p>
+        </div>
+        <div class="sub-sub-element">
+          <img src="image/emoji报纸/报纸卷-彩.png" class="colorize-on-hover">
+          <p class="zhushi"> -newspaper photo</p>
+        
+        </div>
+      </div>
+      <a class="shuye" href="./index.html" id="shuye">
+        <img src="./image/SVG/书页-13.png" alt="">
+      </a>
+    </div>
+  </body>
+  <!-- <script>
+    var zong = document.getElementById('zong');
+    var shuye = document.getElementById('shuye')
+
+    zong.onscroll = function () {
+      if (zong.scrollTop > 100) {
+        shuye.style.display = 'block';
+        shuye.style.transition='all 1s';
+      } else {
+        shuye.style.display = 'none';
+      }
+
+    }
+  </script> -->
+
 </html>
-
- 

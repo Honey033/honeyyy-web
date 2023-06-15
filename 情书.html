@@ -27,6 +27,11 @@
     font-family: my3Font;
     src: url("fonts/字酷堂黄楷体.TTF");
   }
+  @font-face {
+      font-family: my4Font;
+      src: url("fonts/Bodoni\ 72.ttc");
+    }
+
       body {
         margin: 0;
         padding: 0;
@@ -51,6 +56,7 @@
 }
 .zong{ display: flex;
    flex-direction: row;
+   height:1300px;
         overflow: auto;
       }
 .wenzi{font-size: 8;
@@ -71,31 +77,37 @@
         width: 100%;
         border: 1px solid #000;
         display: flex;
-        justify-content: center; /* 在主轴上居中 */
-      align-items: center;
+        /*justify-content: center; /* 在主轴上居中 */
+     /*align-items: center;*/
       }
+      
+.sub-element1 .LL{
+  font-family: myFont;
+  font-size: 40px;
+  position:relative;
+  left:10px;
+}
 
  .sub-sub-element p
-      {font-family: my3Font;
-      line-height: 1.3;
+      { font-family: my4Font;
+      line-height: 1.4;
+      font-size: 20px;
       margin-top: auto;
         text-align: justify;
     }
 
- .sub-element1 {
+.sub-element1 {
         height: 100px;
         background-color: rgb(72, 72, 72);
+        align-items: flex-start;
       }
+
+      
       .sub-element1:hover{
         background-color: rgb(255, 0, 247);
       }
-      .sub-element1 h1{
-        font-family: myFont;
-        font-size: 50PX;
-        position: relative;
-        left:10px;
-  
-      }
+    
+    
       .sub-element2 {
         flex-grow: 1;
       }
@@ -129,6 +141,7 @@
     .sub-sub-element h3{
       font-family:my2Font; 
       text-align: left;
+      font-size: 25px;
     }
 
     .sub-sub-element h3:hover{
@@ -154,7 +167,7 @@
   <body>
     <div class="flex-container">
       <div class="sub-element sub-element1">
-        <h1>Love Letters</h1>
+        <h1 class="LL" >Love Letters</h1>
       </div>
       <div class=" zong">
         <div class="sub-sub-element">
@@ -167,18 +180,14 @@
             <p class="wenzi">-main poster</p>
           </div>
         <div class="sub-sub-element">
-        
-        
           <h3>Romance Object</h3> 
           <p >Chocolate will temporarily raise your dopamine levels to 1.5 times the baseline level, and the effect will disappear after a few minutes or even seconds; inhaled nicotine, such as cigarettes, will raise dopamine levels to more than 2.5 times the baseline level, and this effect is very unhealthy; cocaine will raise dopamine levels in the blood to 2.5 times the baseline level, and amphetamines (stimulants) will raise dopamine levels in the blood to more than 10 times the baseline level. stimulants) will raise dopamine levels in the blood to more than ten times the baseline level; love, whether it's a real relationship or a brief moment of pleasure in romance literature, will raise dopamine levels to more than 1.5 times the baseline level. Reading a romance novel is like having a chemical reaction inside your skull.</p>
           <img src="image/情书/小海报.jpg" class="colorize-on-hover">
           <p class="wenzi">-small poster</p>
         </div>
         <div class="sub-sub-element center-image">
-          
           <img src="image/情书/小物件.jpg" class="colorize-on-hover">
-          
-          <p class="wenzi">-small poster</p>
+          <p class="wenzi">-postcard</p>
         </div>
         <div class="sub-sub-element">
           <h3>The process of love novels serving peoplet</h3> 

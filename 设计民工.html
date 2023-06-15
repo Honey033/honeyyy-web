@@ -9,153 +9,194 @@
   <link rel="icon" href="image/SVG/2-13.png" type="image/png">
   <link rel="stylesheet" href="设计民工.css" />
   <style>
-     @font-face {
-    font-family: myFont;
-    src: url("fonts/Academy Engraved LET Fonts.ttf");
-  }
-  @font-face {
-    font-family: my1Font;
-    src: url("fonts/LibreBodoni-Italic-VariableFont_wght.ttf");
-  }
-  @font-face {
-    font-family: my2Font;;
-    src: url("fonts/LibreBodoni-VariableFont_wght.ttf");
-  }
-
-  @font-face {
-    font-family: my3Font;
-    src: url("fonts/字酷堂黄楷体.TTF");
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-   
-     background-color: #f0f0f0;
-   cursor: url('image/SVG/眼镜_画板\ 1.png'), auto;
+    @font-face {
+      font-family: myFont;
+      src: url("fonts/Academy Engraved LET Fonts.ttf");
     }
 
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  
-  .sub-element {
-    width: 100%;
-    
-    display: flex;
-  }
-  
-  .sub-element1 {
-    height: 100px;
-    background-color:  rgb(72, 72, 72) ;
-  }
-  .sub-element1:hover
-  {background-color: rgb(255, 0, 247) ;}
+    @font-face {
+      font-family: my1Font;
+      src: url("fonts/LibreBodoni-Italic-VariableFont_wght.ttf");
+    }
 
-   .sub-element1 h1
-   {font-family:myFont ;
-    font-size: 40px;
-    position:relative;
-    left:15px;
-  }
-  .sub-element2 {
-    flex-grow: 1;
-  }
-  
-  .sub-sub-element {
-    width: 25%;
-   
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  .sub-sub-element p{
-    text-align:justify;
-    position: relative;
-    left:10px;
-    width:95%
-  }
-  
-  .sub-sub-element:last-child {
-    border-right: none;
-  }
-  
-  .sub-sub-element img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .sub-sub-element p {
-    margin-top: auto;
-    text-align: justify;
-    position:relative;
-    right:20px;
-    font-family: my3Font;
-  }
-  .sub-sub-element h2
-  {font-family:myFont;
-    font-size: 40px;
-    justify-content: flex-end;
-    position:relative;
-    left:1650px;
-    top:900px;
-    position: fixed;
-    z-index: 9999;}
+    @font-face {
+      font-family: my2Font;
+      ;
+      src: url("fonts/LibreBodoni-VariableFont_wght.ttf");
+    }
 
-  .colorize-on-hover {
-      width:95%;
-     height:auto;
-     filter: grayscale(100%);
-     transition: filter 0.3s ease;
-  }
+    @font-face {
+      font-family: my3Font;
+      src: url("fonts/字酷堂黄楷体.TTF");
+    }
 
-  .colorize-on-hover:hover {
-    filter: grayscale(0%);
-  }
-  .sub-sub-element h3{
-      font-family:my2Font; 
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      background-color: #f0f0f0;
+      cursor: url('image/SVG/眼镜_画板\ 1.png'), auto;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      position: relative;
+    }
+
+    .sub-element {
+      width: 100%;
+
+      display: flex;
+    }
+
+    .sub-element1 {
+      height: 100px;
+      background-color: rgb(72, 72, 72);
+    }
+
+    .sub-element1:hover {
+      background-color: rgb(255, 0, 247);
+    }
+
+    .sub-element1 h1 {
+      font-family: myFont;
+      font-size: 40px;
+      position: relative;
+      left: 15px;
+    }
+
+    .sub-element2 {
+      flex-grow: 1;
+    }
+
+    .sub-sub-element {
+      width: 25%;
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .sub-sub-element p {
+      text-align: justify;
+      position: relative;
+      left: 10px;
+      width: 95%
+    }
+
+    .sub-sub-element:last-child {
+      border-right: none;
+    }
+
+    .sub-sub-element img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .sub-sub-element p {
+      margin-top: auto;
+      text-align: justify;
+      position: relative;
+      right: 20px;
+      font-family: my3Font;
+    }
+
+    .sub-sub-element h2 {
+      font-family: myFont;
+      font-size: 40px;
+      justify-content: flex-end;
+      position: relative;
+      left: 1650px;
+      top: 900px;
+      position: fixed;
+      z-index: 9999;
+    }
+
+    .colorize-on-hover {
+      width: 95%;
+      height: auto;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+
+    .colorize-on-hover:hover {
+      filter: grayscale(0%);
+    }
+
+    .sub-sub-element h3 {
+      font-family: my2Font;
       text-align: left;
-      position:relative;
-      left:10px;
+      position: relative;
+      left: 10px;
+    }
+    .sub-sub-element .wenzi {
+      /* font-size: 8; */
+      /* position: relative;
+      left: 310px; */
+      width: 95%;
+      text-align: right;
+    }
+
+    .sub-sub-element h3:hover {
+      color: rgb(255, 0, 247);
+    }
+
+    /* 书页 */
+    .shuye {
+      width: 13%;
+      height: 25%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .shuye img {
+      width: 100%;
+      height: 100%;
     }
     
-    .sub-sub-element h3:hover{
-      color:rgb(255, 0, 247);
-    }
-
-
-</style>
+  </style>
 </head>
+
 <body>
- 
-</head>
-<body>
-<div class="flex-container">
-  <div class="sub-element sub-element1">
-    <h1>Design Folk</h2>
-  </div>
-  <div class="sub-element sub-element2">
-    <div class="sub-sub-element">
-      <h3>Motive</h3>
-      <p class="pp">The concept of design folk comes from the difference between a designer and a technician who designs software. For someone who does not use design software subjectively, they design something like a brick. The reason for designing this website is to make people think that in the current Internet age, we think that the design software on the computer screen is the solution, but in this website, whatever tools people use in the software, they get a brick, but they can build their own brick.</p>
-     
+
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="sub-element sub-element1">
+        <h1>Design Folk</h2>
+      </div>
+      <div class="sub-element sub-element2">
+        <div class="sub-sub-element">
+          <h3>Motive</h3>
+          <p class="pp">The concept of design folk comes from the difference between a designer and a technician who
+            designs software. For someone who does not use design software subjectively, they design something like a
+            brick. The reason for designing this website is to make people think that in the current Internet age, we
+            think that the design software on the computer screen is the solution, but in this website, whatever tools
+            people use in the software, they get a brick, but they can build their own brick.</p>
+
+        </div>
+        <div class="sub-sub-element">
+          <img src="image/设计民工/全景-彩.JPG" class="colorize-on-hover">
+          <p class="wenzi">-panoramic</p>
+        </div>
+        <div class="sub-sub-element">
+          <img src="image/设计民工/电脑+拼图 彩.png" class="colorize-on-hover">
+          <p class="wenzi">—website</p>
+        </div>
+        <div class="sub-sub-element">
+          <img src="image/设计民工/拼图-彩.JPG" class="colorize-on-hover">
+          <p class="wenzi">-puzzle</p>
+          <!-- <h2><a href="index.html">Back</a></h2> -->
+        </div>
+      </div>
+      <a class="shuye" href="./index.html">
+        <img src="./image/SVG/书页-13.png" alt="">
+      </a>
     </div>
-    <div class="sub-sub-element">
-      <img src="image/设计民工/全景-彩.JPG"  class="colorize-on-hover">
-      <p>-panoramic</p>
-    </div>
-    <div class="sub-sub-element">
-      <img src="image/设计民工/电脑+拼图 彩.png" class="colorize-on-hover">
-      <p>—website</p>
-    </div>
-    <div class="sub-sub-element">
-      <img src="image/设计民工/拼图-彩.JPG" class="colorize-on-hover">
-      <p>-puzzle</p>
-      <h2><a href="index.html">Back</a></h2>
-      <img src="image/SVG/书页-13.png" >
-    </div>
-  </div>
-</div>
-</body>
+  </body>
+
 </html>
